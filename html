@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elektroniczshop - Produkty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Koszyk -->
+    <div id="cart" class="cart">
+        <h2>Twój Koszyk</h2>
+        <div id="cart-items" class="cart-items">
+            <!-- Produkty w koszyku będą tu dodawane -->
+        </div>
+        <button id="checkout-btn" class="checkout-btn">Przejdź do kasy</button>
+        <button id="close-cart-btn" class="close-cart-btn">Zamknij koszyk</button>
+    </div>
+
+    <!-- Strona Produktu -->
+    <div class="product-page">
+        <div class="product">
+            <img src="laptop.jpg" alt="Laptop XYZ">
+            <h3>Laptop XYZ</h3>
+            <p>2999 PLN</p>
+            <button class="add-to-cart" onclick="addToCart('Laptop XYZ', 2999)">Dodaj do koszyka</button>
+        </div>
+
+        <div class="product">
+            <img src="phone.jpg" alt="Smartphone ABC">
+            <h3>Smartphone ABC</h3>
+            <p>1500 PLN</p>
+            <button class="add-to-cart" onclick="addToCart('Smartphone ABC', 1500)">Dodaj do koszyka</button>
+        </div>
+
+        <div class="product">
+            <img src="tablet.jpg" alt="Tablet 123">
+            <h3>Tablet 123</h3>
+            <p>1200 PLN</p>
+            <button class="add-to-cart" onclick="addToCart('Tablet 123', 1200)">Dodaj do koszyka</button>
+        </div>
+
+        <button id="open-cart-btn" class="open-cart-btn" onclick="openCart()">Zobacz koszyk</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

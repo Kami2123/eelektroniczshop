@@ -1,0 +1,126 @@
+/* Ogólne style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Strona Produktu */
+.product-page {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.product {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.product p {
+    font-size: 1.2rem;
+    color: #ff6600;
+}
+
+.add-to-cart {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.add-to-cart:hover {
+    background-color: #e65c00;
+}
+
+.open-cart-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.open-cart-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Koszyk */
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: none; /* Ukryty na początku */
+    z-index: 1000;
+}
+
+.cart h2 {
+    font-size: 2rem;
+}
+
+.cart-items {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.cart-items p {
+    font-size: 1rem;
+}
+
+.checkout-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.checkout-btn:hover {
+    background-color: #e65c00;
+}
+
+.close-cart-btn {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.close-cart-btn:hover {
+    background-color: darkred;
+}
